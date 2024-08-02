@@ -20,7 +20,7 @@ const LoginPage = ({ setUser, setUsername,setSubid }) => {
         setUsername(username);
         setUser(response.data.user._id);
         console.log("subss",response.data.sub)
-        setSubid(response.data.sub) // Pass the user object from the response
+        setSubid(response.data.sub) 
         navigate('/home', { state: { us_name: username } });
       } else {
         setErrorMessage(response.data.message);
@@ -52,7 +52,7 @@ const LoginPage = ({ setUser, setUsername,setSubid }) => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        {errorMessage && <p className="error-message" style={{color:"white"}}>{errorMessage}</p>}
+        {errorMessage && <p className="error-message" style={{color:"black"}}>{errorMessage}</p>}
         <div className="submit-cont">
           <button type="submit" className="submit-btn">
             Login
