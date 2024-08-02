@@ -1,10 +1,10 @@
-/* Shared styles for both login and signup pages */
+
 .login-div {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff; /* Match main background color */
+    background-color: #fff; 
 }
 
 .login-cont {
@@ -22,6 +22,7 @@
 }
 
 .error-message{
+    color:black;
     margin-top: 2px;
 margin-bottom: -28px;
 }
@@ -57,12 +58,12 @@ margin-bottom: -28px;
 
 .login-cont input:focus {
     outline: none;
-    border-color: #ff6b6b; /* Match main hover color */
+    border-color: #ff6b6b; 
 }
 
 .login-cont .submit-cont .submit-btn {
     border: 1px solid transparent;
-    background-color: #fb5555; /* Match main button color */
+    background-color: #fb5555; 
     color: white;
     border-radius: 10px;
     width: 200px; 
@@ -80,13 +81,13 @@ margin-bottom: -28px;
 }
 
 .login-signup-link {
-    color: #7860d6; /* Match link color */
+    color: #7860d6; 
     margin-top: 10px;
     font-size: 16px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .login-signup-link:hover {
-    color: #ff6b6b; /* Match main hover color */
+    color: #ff6b6b;
     transform: scale(1.1);
 }
