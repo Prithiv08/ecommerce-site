@@ -17,24 +17,9 @@ export default function SignUpPage() {
       setErrorMessage("Passwords do not match");
       return;
     }
-    // try {
-    //   const response = await axios.post("http://localhost:5000/create", {
-    //     userName: username,
-    //     password: password,
-    //   });
-    //   console.log(username, email, password);
-    //   if (response.data.message === 'Signup successful') {
-    //     navigate('/home');
-    //   }
-    // } catch (error) {
-    //   if (error.response && error.response.data.message) {
-    //     setErrorMessage(error.response.data.message);
-    //   } else {
-    //     setErrorMessage("Signup failed, please try again");
-    //   }
-    // }
 
-    axios.post("http://localhost:5000/create", {
+
+    axios.post("https://ecommerce-backend-2grs.onrender.com/create", {
       userName: username,
       password: password,
     });
