@@ -12,7 +12,7 @@ const ItemCard = ({ item, username, addToCart,key,user }) => {
 
   const handleAddToCart = async() => {
     console.log("haihello",username)
-   const res =await axios.post("http://localhost:5000/cart",{user:username,items:item,quantity:quantity})
+   const res =await axios.post("https://ecommerce-backend-2grs.onrender.com/cart",{user:username,items:item,quantity:quantity})
    console.log(res)
   };
 
