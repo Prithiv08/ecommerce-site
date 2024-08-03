@@ -19,7 +19,7 @@ export default function SignUpPage() {
     }
 
 
-    axios.post("https://ecommerce-backend-2grs.onrender.com/create", {
+    axios.post("http://localhost:5000/create", {
       userName: username,
       password: password,
     });
