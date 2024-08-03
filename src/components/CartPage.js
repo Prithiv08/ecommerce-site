@@ -16,7 +16,7 @@ const CartPage = ({ user }) => {
 
   const fetchCart = async () => {
     try {
-      const response = await axios.get(`https://ecommerce-backend-2grs.onrender.com/${user}`);
+      const response = await axios.get(`http://localhost:5000/${user}`);
       const cartData = response.data;
       setData(cartData);
     } catch (error) {
