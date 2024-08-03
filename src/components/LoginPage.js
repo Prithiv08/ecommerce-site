@@ -12,7 +12,7 @@ const LoginPage = ({ setUser, setUsername,setSubid }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://ecommerce-backend-2grs.onrender.com/login", {
+      const response = await axios.post("http://localhost:5000/login", {
         userName: username,
         password: password,
       });
